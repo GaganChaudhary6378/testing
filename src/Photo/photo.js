@@ -49,7 +49,7 @@ export default function Photo() {
                 </div>
 
                 <div className="bg-gray-400 lg:w-44 lg:h-44 mt-20 w-[70%] h-[30%]" style={{ backgroundImage: `url(${imagePreview})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                <p className="lg:w-64 text-center mt-8 lg:text-base text-xl w-screen lg:p-0 p-4">Upload a photo and discover English names tailored for you!</p>
+                <p className="lg:w-64 text-center mt-8 lg:text-base text-xl w-screen lg:p-0 p-10">Upload a photo and discover English names tailored for you!</p>
 
                 <div className="flex flex-row justify-center items-center gap-12 mt-10">
                     <label className="bg-violet-700 rounded-full w-12 h-12 flex justify-center items-center" htmlFor="fileInput">
@@ -68,7 +68,7 @@ export default function Photo() {
                 </div>
 
                 {fileSelected &&
-                    <p className="lg:mt-4 mt-6 text-blue-500 font-bold">Selected File: <span className="text-black">{filename}</span></p>
+                    <p className="lg:mt-4 mt-10 text-blue-500 font-bold text-center">Selected File: <span className="text-black">{filename}</span></p>
                 }
 
                 <button className="p-2 lg:w-44 w-[70%] rounded-md bg-violet-700 text-white font-semibold mt-14">Continue</button>
