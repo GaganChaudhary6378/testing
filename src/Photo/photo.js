@@ -107,7 +107,7 @@ export default function Photo() {
                             <IoIosSettings className="text-3xl hover:cursor-pointer" />
                         </div>
 
-                        <div className="bg-gray-400 lg:w-44 lg:h-44 mt-20 w-[70%] h-[30%]" style={{ backgroundImage: `url(${imagePreview})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+                        <div className="bg-gray-400 lg:w-72 lg:h-60 mt-20 w-[70%] h-[30%]" style={{ backgroundImage: `url(${imagePreview})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                         <p className="lg:w-64 text-center mt-8 lg:text-base text-xl w-screen lg:p-0 p-10">Upload a photo and discover English names tailored for you!</p>
 
                         <div className="flex flex-row justify-center items-center gap-12 mt-10">
@@ -142,7 +142,7 @@ export default function Photo() {
                             <IoIosSettings className="text-3xl hover:cursor-pointer" />
                         </div>
 
-                        <div onClick={() => setCropperState(true)} className="bg-gray-400 lg:w-44 lg:h-44 mt-20 w-[70%] h-fit border border-red-700">
+                        <div onClick={() => setCropperState(true)} className="bg-gray-400 lg:w-72 lg:h-60 mt-20 w-[70%] h-fit rounded-md">
                             {croppedImage === true ? (
                                 <img
                                     src={newImage}
@@ -153,6 +153,7 @@ export default function Photo() {
                                         width: '100%',
                                         height: '100%',
                                     }}
+                                    className="rounded-md"
                                 />
                             ) : (
                                 <img
